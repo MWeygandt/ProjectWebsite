@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cheese Sitemap</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="styles/navbar.css" />
+  </head>
+  <style>
+    body {
+      background-color: white;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      font-family: serif;
+      color: #f0c506;
+    }
+    ul.sitemaplist {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      color: red;
+      font-size: 1.2em;
+    }
+    a:link {
+      text-decoration: none;
+    }
+    a:visited {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    a:active {
+      text-decoration: none;
+    } /* Credit: https://blog.hubspot.com/website/remove-underline-from-links-css */
+    hr {
+      height: 1px;
+      background-color: gold;
+      border: none;
+    }
+    .sitelist{
+        color:#f0c506;
+    }
+  </style>
+  <body>
+    <div id="navbar">
+      <ul class="topnav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="cheeses.html">Cheeses</a></li>
+        <li><a href="facts.html">Facts</a></li>
+        <li><a href="recepies.html">Recepies</a></li>
+        <li><a href="homemade.html">Do it from home!</a></li>
+        <li><a id="active" href="sitemap.html">Sitemap</a></li>
+        <li id="right"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div><a id="top"></a></div>
+    <div>
+      <h1>Sitemap</h1>
+      <hr />
+      <div>
+        <h2>Types of cheese</h2>
+        <ul class="sitemaplist">
+          <li><a href="cheeses.html" class="sitelist">Cheeses</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Cheese Facts</h2>
+        <ul class="sitemaplist">
+          <li><a href="facts.html" class="sitelist">Facts</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Recepies with different types of cheeses</h2>
+        <ul class="sitemaplist">
+          <li><a href="recepies.html" class="sitelist">Recepies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>How to make cheese at home</h2>
+        <ul class="sitemaplist">
+          <li><a href="homemade.html" class="sitelist">Do it from home!</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact me!</h2>
+        <ul class="sitemaplist">
+          <li id="right"><a href="contact.html" class="sitelist">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      Sources:
+
+    </div>
+  </body>
 </html>

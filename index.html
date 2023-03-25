@@ -5,16 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <style>
+      body {
+        background-image: url(images/homebackground.jpg);
+        width: 100%;
+      }
+      #hometitle{
+        color: rgb(0, 0, 0);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:5em;
+        text-align: center;
+        margin-top: 300px;
+      }
+
+    </style>
   </head>
   <body>
     <div id="navbar">
-      <a href="#home">Home</a>
-      <a href="#cheeses">Cheeses</a>
-      <a href="#facts">Facts</a>
-      <a href="#recepies">Recepies</a>
-      <a href="#homemade">Do it from home!</a>
-      <a href="#sitemap">Sitemap</a>
-      <a href="#contact">Contact</a>
+      <ul class="topnav">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="cheeses.html">Cheeses</a></li>
+        <li><a href="facts.html">Facts</a></li>
+        <li><a href="recepies.html">Recepies</a></li>
+        <li><a href="homemade.html">Do it from home!</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li id="right"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h1 id="hometitle">Cheese</h1>
+      <!-- <button id="homebtn">Take me to the Cheese!</button> -->
     </div>
   </body>
 </html>

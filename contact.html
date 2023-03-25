@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Contact Page</title>
+    <link rel="stylesheet" href="styles/navbar.css" />
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+    }
+
+    .content {
+      grid-area: content;
+    }
+
+    .header {
+      grid-area: header;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-areas:
+        "....... header  header"
+        "sidebar content content";
+      background-color: #fff;
+      color: #444;
+    }
+    .box {
+      background-color: #444;
+      color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 150%;
+    }
+
+    .header {
+      background-color: #999;
+    }
+    a:link {
+      text-decoration: none;
+    }
+    a:visited {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    a:active {
+      text-decoration: none;
+    }
+    .clicker {
+      font-size: 10pt;
+    }
+    a.contacttext {
+      text-align: center;
+      color: white;
+    }
+    h1 {
+      color: black;
+    }
+
+  </style>
+  <body>
+    <div id="navbar">
+      <ul class="topnav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="cheeses.html">Cheeses</a></li>
+        <li><a href="facts.html">Facts</a></li>
+        <li><a href="recepies.html">Recepies</a></li>
+        <li><a href="homemade.html">Do it from home!</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li id="right" class="active"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="contents">
+      <div class="wrapper">
+        <div class="box header">
+          <h1>Contact</h1>
+        </div>
+        <div class="box sidebar">
+          <div class="contactbox">
+            <h2>My Information</h2>
+            <dl>
+              <dt>Max Weygandt, OIM3690</dt>
+              <dt>Phone: (608)-111-1111</dt>
+              <dt>Email: mweygandt1@babson.edu</dt>
+              <dt class="clicker">Click below:</dt>
+              <dt>
+                <a href="https://github.com/MWeygandt" class="contacttext"
+                  >GitHub</a
+                >
+              </dt>
+              <dt>
+                <a
+                  href="https://www.swimcloud.com/swimmer/456981/"
+                  class="contacttext"
+                  >Swimcloud</a
+                >
+              </dt>
+              <dt>
+                <a href="mailto:mweygandt1@babson.edu" class="contacttext"
+                  >My Email</a
+                >
+              </dt>
+              <dt>
+                <a href="sitemap.html" class="contacttext">List of Work</a>
+              </dt>
+              <dt>
+                <a href="https://barriquesmarket.com/" class="contacttext"
+                  >Family Business</a
+                >
+              </dt>
+              <dt>
+                <a
+                  href="https://www.formula1.com/en/drivers/max-verstappen.html"
+                  class="contacttext"
+                  >My Favorite F1 Driver</a
+                >
+              </dt>
+            </dl>
+          </div>
+        </div>
+        <div class="box content">
+          <div>Comments</div>
+          <div>
+            <form method="post" action="https://oim-apis..up.railway.app/form2">
+              <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+              </div>
+              <div><input type="submit" value="Submit" /></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

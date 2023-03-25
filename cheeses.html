@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheeses</title>
+    <link rel="stylesheet" href="styles/navbar.css" />
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+    }
+
+    .content {
+      grid-area: content;
+    }
+
+    .header {
+      grid-area: header;
+      column-span: 3;
+    }
+
+    .wrapper {
+      display: grid inline-grid;
+      grid-gap: 10px;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "header header"
+        "sidebar content"
+        ". content"
+        ". content"
+        ". content"
+        ". content"
+        ". content"
+        ". content"
+        ". content"
+        ". content"
+        ". content"
+        ". content"
+        ". content"
+        ". content"
+        ". content"
+        ". content"
+        ". content"
+        ". content"
+        ". content"
+        ". content";
+
+      background-color: #fff;
+      color: #444;
+      justify-items: center;
+    }
+    .box {
+      background-color: #444;
+      color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 150%;
+    }
+
+    .header {
+      background-color: #999;
+      justify-content: center;
+    }
+    img {
+      width: 350px;
+      height: 200px;
+    }
+    #item1 {
+      grid-column: 1 / 1;
+      grid-row: 1 / 10;
+    }
+    #item2 {
+      grid-column: 2 / 2;
+      grid-row: 2 / 2;
+    }
+    a:link {
+      text-decoration: none;
+    }
+    a:visited {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    a:active {
+      text-decoration: none;
+    }
+    a{
+        color: white;
+    }
+  </style>
+  <body>
+    <div id="navbar">
+      <ul class="topnav">
+        <li><a href="#home">Home</a></li>
+        <li><a class="active" href="cheeses.html">Cheeses</a></li>
+        <li><a href="facts.html">Facts</a></li>
+        <li><a href="recepies.html">Recepies</a></li>
+        <li><a href="homemade.html">Do it from home!</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li id="right"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="contents">
+      <div class="wrapper">
+        <div>
+          <div class="box header">All About Cheese</div>
+        </div>
+        <div class="box sidebar">
+          <div>Fresh Cheeses</div>
+          <div>
+            <ul>
+              <li><a href="#mozzarella">Mozzarella</a></li>
+              <li><a href="#feta">Feta</a></li>
+              <li><a href="#ricotta">Ricotta</a></li>
+              <li><a href="#cream-cheese">Cream Cheese</a></li>
+              <li><a href="#cottage-cheese">Cottage Cheese</a></li>
+              <li><a href="#mascarpone">Mascarpone</a></li>
+            </ul>
+          </div>
+          <hr />
+          <div>Soft Cheeses</div>
+          <div>
+            <ul>
+              <li><a href="#brie">Brie</a></li>
+              <li><a href="#camembert">Camembert</a></li>
+              <li><a href="#chaource">Chaource</a></li>
+              <li><a href="#chevre">Chevre</a></li>
+            </ul>
+          </div>
+          <hr />
+          <div>Semi-Soft Cheeses</div>
+          <div>
+            <ul>
+              <li><a href="#havarti">Havarti</a></li>
+              <li><a href="#muenster">Muenster</a></li>
+              <li><a href="#provolone">Provolone</a></li>
+              <li><a href="#american">American</a></li>
+              <li><a href="#taleggio">Taleggio</a></li>
+            </ul>
+          </div>
+          <hr />
+          <div>Semi-Firm Cheeses</div>
+          <div>
+            <ul>
+              <li><a href="#cascaval">Cascaval</a></li>
+              <li><a href="#cheddar">Cheddar</a></li>
+              <li><a href="#edam">Edam</a></li>
+              <li><a href="#emmental">Emmental</a></li>
+              <li><a href="#gouda">Gouda</a></li>
+              <li><a href="#gruyere">Gruyere</a></li>
+            </ul>
+          </div>
+          <hr />
+          <div>Hard Cheeses</div>
+          <div>
+            <ul>
+              <li><a href="#asiago-d-allevo">Asiago D'Allevo</a></li>
+              <li><a href="#grana-padano">Grana Padano</a></li>
+              <li><a href="#manchego">Manchego</a></li>
+              <li><a href="#parmesan">Parmesan</a></li>
+              <li><a href="#pecorino">Pecorino</a></li>
+            </ul>
+          </div>
+          <hr />
+          <div>Blue-Veined Cheeses</div>
+          <div>
+            <ul>
+              <li><a href="#fourme-d-ambert">Fourme d'Ambert</a></li>
+              <li><a href="#gorgonzola">Gorgonzola</a></li>
+              <li><a href="#roquefort">Roquefort</a></li>
+              <li><a href="#stilton">Stilton</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="mozzarella">
+            <h2>Mozzarella cheese</h2>
+            <ul>
+              <li>Type of Milk: Buffalo or cow</li>
+              <li>Flavor Notes: Mild, milky, slightly acidic</li>
+              <li>Texture: Creamy, elastic</li>
+              <li>Wine: Soave, or any red or white</li>
+              <li>
+                Accompaniments: Olive oil, tomatoes, basil, grilled vegetables
+              </li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="feta">
+            <h2>Feta</h2>
+            <ul>
+              <li>Type of Milk: Sheep and goat</li>
+              <li>Flavor Notes: Tangy, salty, pungent, intense</li>
+              <li>Texture: Brittle, dry, grainy</li>
+              <li>Wine: Rose</li>
+              <li>Accompaniments: Cucumber, tomato, red onions</li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="ricotta">
+            <h2>Ricotta</h2>
+            <ul>
+              <li>Type of Milk: Cow, sheep, goat, or buffalo</li>
+              <li>Flavor Notes: Mild, fresh, slightly sweet</li>
+              <li>Texture: Thick, creamy, spreadable</li>
+              <li>Wine: Prosecco or Fume Blanc</li>
+              <li>
+                Accompaniments: Honey, strawberries, nut butter spreads,
+                bananas, jams, eggs, pesto, tomatoes
+              </li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="cream-cheese">
+            <h2>Cream Cheese</h2>
+            <ul>
+              <li>Type of Milk: Cow</li>
+              <li>Flavor Notes: Mild, milky, slightly acidic, rich</li>
+              <li>Texture: Thick, homogenous, creamy, spreadable</li>
+              <li>
+                Add ins: Scallions, chives, poppy seeds, roasted garlic, black
+                pepper, honey, mint, dried cranberries, orange zest, dark
+                chocolate
+              </li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="cottage-cheese">
+            <h2>Cottage Cheese</h2>
+            <ul>
+              <li>Type of Milk: Cow</li>
+              <li>Flavor Notes: Mild, milky, slightly acidic</li>
+              <li>Texture: Lumpy, creamy, thick, spoonable</li>
+              <li>
+                Accompaniments: Berries, peaches, bananas, pineapple, granola
+              </li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="mascarpone">
+            <h2>Mascarpone</h2>
+            <ul>
+              <li>Type of Milk: Cow</li>
+              <li>
+                Flavor Notes: Slightly sweet, rich, buttery, slightly tangy
+              </li>
+              <li>Texture: Spreadable, creamy</li>
+              <li>
+                Accompaniments: Strawberries, chocolate shavings, honey, in or
+                spooned on top of desserts
+              </li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="brie">
+            <h2>Brie</h2>
+            <ul>
+              <li>Type of Milk: Cow</li>
+              <li>Flavor Notes: Light, buttery, slightly salty</li>
+              <li>Texture: Silky, smooth, creamy</li>
+              <li>Wine: California Merlot or Chardonnay</li>
+              <li>Accompaniments: Green apples, pears, fig jam, honey</li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="camembert">
+            <h2>Camembert</h2>
+            <ul>
+              <li>Type of Milk: Cow</li>
+              <li>Flavor Notes: Hay, umami, earthy, grassy</li>
+              <li>
+                Texture: Velvety, thick, squidgy, a bit sticky, bloomy rind
+              </li>
+              <li>Wine: Cotes du Rhones</li>
+              <li>Accompaniments: Cantaloupe, pecans, baguette</li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="chaource">
+            <h2>Chaource</h2>
+            <ul>
+              <li>Type of Milk: Cow</li>
+              <li>Flavor Notes: Buttery, mild</li>
+              <li>
+                Texture: A bit drier than other soft cheeses, sturdy, middle can
+                slide out if cut open and left at room temp for a couple hours
+              </li>
+              <li>Wine: Chablis, Sancerre, or Champagne</li>
+              <li>Accompaniments: Baguette, fig jam</li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="chevre">
+            <h2>Chevre</h2>
+            <ul>
+              <li>Type of Milk: Goat</li>
+              <li>Flavor Notes: Bright, tangy, a little sweet</li>
+              <li>Texture: Plump, creamy, moist</li>
+              <li>Wine: Sauvignon Blanc or Spanish Albarino</li>
+              <li>
+                Accompaniments: Figs, balsamic dressing, peppery greens, whole
+                wheat bread, baguette, beets, almonds, apples
+              </li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="havarti">
+            <h2>Havarti</h2>
+            <ul>
+              <li>Type of Milk: Cow</li>
+              <li>Flavor Notes: Cultured butter, slightly acidic, and sharp</li>
+              <li>Texture: Smooth, creamy, elastic</li>
+              <li>Wine: Chardonnay, Sauvignon Blanc, Pinot Noir</li>
+              <li>Accompaniments: Figs, raisins, walnuts, rustic breads</li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="muenster">
+            <h2>Muenster</h2>
+            <ul>
+              <li>Type of Milk: Cow</li>
+              <li>Flavor Notes: Mild, sweet, roasted nuts</li>
+              <li>Texture: Smooth, soft, supple</li>
+              <li>
+                Wine/beer: Gewurztraminer, Riesling, Belgian ales, lagers,
+                porters, stouts
+              </li>
+              <li>Accompaniments: Apples, dried fruits, pears, beef</li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="provolone">
+            <h2>Provolone</h2>
+            <ul>
+              <li>Type of Milk: Cow</li>
+              <li>Flavor Notes: Beefy, sharp, nutty, salty undertones</li>
+              <li>Texture: Smooth, silky, firm</li>
+              <li>Wine/Beer: Chianti, Pinot Grigio, Lagers</li>
+              <li>
+                Accompaniments: Carpaccio, toasted bread, dried plums, cherries,
+                olives, roasted red peppers, giardinera
+              </li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="american">
+            <h2>American</h2>
+            <ul>
+              <li>
+                Type of Milk: Blend of cow's milk, milk fats and solids, and
+                whey protein
+              </li>
+              <li>Flavor Notes: Mild and salty</li>
+              <li>Texture: Homogenous and creamy</li>
+              <li>Beer: American-style IPAs</li>
+              <li>
+                Accompaniments: Crusty breads, bacon, tomatoes, Muenster,
+                Havarti, and Provolone cheese
+              </li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="taleggio">
+            <h2>Taleggio</h2>
+            <ul>
+              <li>Type of Milk: Cow</li>
+              <li>Flavor Notes: Meaty, tangy, pungent</li>
+              <li>Texture: Rubbery, pliant</li>
+              <li>Wine: Saison, Pinot Noir, Rose</li>
+              <li>Accompaniments: Mustard, honey, chestnuts, polenta</li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="cascaval">
+            <h2>Cascaval</h2>
+            <ul>
+              <li>Type of Milk: Cow and / or sheep</li>
+              <li>Flavor Notes: Mildly sharp and salty, hint of olive oil</li>
+              <li>Texture: Firm</li>
+              <li>
+                Wine/Beer: Light red wine or brown beer, such as a pilsner
+              </li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="cheddar">
+            <h2>Cheddar</h2>
+            <ul>
+              <li>Type of Milk: Cow</li>
+              <li>
+                Flavor Notes: Umami, sharp, bold, toasted hazelnuts, whiskey
+              </li>
+              <li>Texture: A bit crumbly</li>
+              <li>
+                Wine/Beer: Zinfandel, Pinot Noir, Cabernet, porter, mead, or
+                amber ale
+              </li>
+              <li>
+                Accompaniments: Cherries, apples, walnuts, cashews, dill
+                crackers
+              </li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="edam">
+            <h2>Edam</h2>
+            <ul>
+              <li>Type of Milk: Cow or goat</li>
+              <li>
+                Flavor Notes: Competing blends of creamy and nutty tones, hint
+                of salt
+              </li>
+              <li>Texture: Springy and dense</li>
+              <li>Wine: Pinot Grigio, Riesling, Chardonnay, Shiraz</li>
+              <li>Accompaniments: Peaches, apricots, cherries, melons</li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="emmental">
+            <h2>Emmental</h2>
+            <ul>
+              <li>Type of Milk: Cow</li>
+              <li>
+                Flavor Notes: Buttery, mildly nutty, slightly sharp, browned
+                butter
+              </li>
+              <li>Texture: Velvety, dense, smooth</li>
+              <li>
+                Wine/Beer: Merlot, Riesling, Champagne, Beaujolais, light lager,
+                or stout
+              </li>
+              <li>Accompaniments: Apples, grapes, peaches, and pears</li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="gouda">
+            <h2>Gouda</h2>
+            <ul>
+              <li>Type of Milk: Cow or Goat</li>
+              <li>
+                Flavor Notes: Intense, caramel / butterscotch flavor, browned
+                butter, toffee
+              </li>
+              <li>Texture: Semi-dry, a bit crunchy, definitive bite</li>
+              <li>Wine: Cabernet or Shiraz</li>
+              <li>Accompaniments: Spicy nuts, olives, oat crackers</li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="gruyere">
+            <h2>Gruyere</h2>
+            <ul>
+              <li>Type of Milk: Cow</li>
+              <li>
+                Flavor Notes: Sweet, slightly salty, complex, slightly earthy,
+                beefy
+              </li>
+              <li>Texture: A bit grainy and flaky, dense</li>
+              <li>Wine: Spanish Sherries or southern France reds</li>
+              <li>
+                Accompaniments: Broiled on top of onion soups, baked into
+                heartier dishes, sliced pears, lingonberry jam, figs, rosemary,
+                marjoram
+              </li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="asiago-d-allevo">
+            <h2>Asiago D'Allevo</h2>
+            <ul>
+              <li>Type of Milk: Cow</li>
+              <li>
+                Flavor Notes: Milky, sharp, intense, piquant, caramely, savory
+              </li>
+              <li>Texture: Smooth but slightly crumbly, al dente</li>
+              <li>Wine: Orvieto or Soave</li>
+              <li>
+                Accompaniments: Figs, grapes, candied pecans, and rustic breads
+                such as sourdough, baguette, or ciabatta
+              </li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="grana-padano">
+            <h2>Grana Padano</h2>
+            <ul>
+              <li>Type of Milk: Cow</li>
+              <li>Flavor Notes: Full-bodied, savory</li>
+              <li>Texture: Dense, flaky, rickety, crunchy</li>
+              <li>
+                Wine: Gavi, Chianti, Barbaresco, Barolo, Lambrusco, Amarone
+              </li>
+              <li>
+                Accompaniments: Figs, dried fruits, honey, apples, arugula or
+                lacinato kale salads, add the rind into soup
+              </li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="manchego">
+            <h2>Manchego</h2>
+            <ul>
+              <li>Type of Milk: Sheep</li>
+              <li>
+                Flavor Notes: Creamy, tangy, semi-sweet, salty after taste,
+                well-developed
+              </li>
+              <li>Texture: Flaky, grainy, and slightly crystalized</li>
+              <li>Wine/Beer: Stout, Porter, Sherry, Riesling, Whiskey</li>
+              <li>Accompaniments: Honey, almonds, marmalade</li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="parmesan">
+            <h2>Parmesan</h2>
+            <ul>
+              <li>Type of Milk: Cow</li>
+              <li>Flavor Notes: Salty, nutty, spicy, slightly floral</li>
+              <li>Texture: Dry, crackly, crumbly, rough</li>
+              <li>
+                Wine: Cabernet Sauvignon, Sauvignon Blanc, Shiraz, Chardonnay,
+                Merlot, or Sangiovese
+              </li>
+              <li>
+                Accompaniments: Prosciutto, balsamic vinegar, spiced quince,
+                spiced nuts
+              </li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="pecorino">
+            <h2>Pecorino</h2>
+            <ul>
+              <li>Type of Milk: Sheep</li>
+              <li>Flavor Notes: Aromatic, pungent, soft spices</li>
+              <li>Texture: Crumbly, firm</li>
+              <li>Wine: White Burgundy, Nebbiolo, Pinot Noir, Rioja</li>
+              <li>
+                Accompaniments: Dry-cured meats, walnuts, hearty, winter
+                vegetables, sausages
+              </li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="fourme-d-ambert">
+            <h2>Fourme d'Ambert</h2>
+            <ul>
+              <li>Type of Milk: Cow</li>
+              <li>Flavor Notes: Creamy, earthy, smooth, balanced</li>
+              <li>Texture: Velvety, supple, dense</li>
+              <li>Wine: Merlot, Port, Riesling</li>
+              <li>
+                Accompaniments: Baguette, rye bread, raisins, walnuts,
+                hazelnuts, figs, raspberries, cherries
+              </li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="gorgonzola">
+            <h2>Gorgonzola</h2>
+            <ul>
+              <li>Type of Milk: Cow</li>
+              <li>Flavor Notes: Competing flavors of buttery and piquant</li>
+              <li>Texture: Soft yet crumbly</li>
+              <li>Wine: Zinfandel and Sauternes</li>
+              <li>Accompaniments: Grapes, honey, pistachios</li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="roquefort">
+            <h2>Roquefort</h2>
+            <ul>
+              <li>Type of Milk: Sheep</li>
+              <li>Flavor Notes: Pungent, sweet burnt caramel, metallic tang</li>
+              <li>Texture: Moist, soft, crumbly, cratered</li>
+              <li>Wine: Riesling, Port, Sherry, or ice wines</li>
+              <li>Accompaniments: Honey, spiced apples, meat</li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <div id="item2" class="box content">
+          <div id="stilton">
+            <h2>Stilton</h2>
+            <ul>
+              <li>Type of Milk: Cow</li>
+              <li>
+                Flavor Notes: Robust, strong, earthy, mushroomy, grassy, peppery
+              </li>
+              <li>Texture: Creamy, loose crumb</li>
+              <li>
+                Wine/Beer: Porter, Stout, Sherry, Elderberry, Cabernet Sauvignon
+              </li>
+              <li>
+                Accompaniments: Honey, pecans, roasted red peppers, meat and
+                fish, nut bread
+              </li>
+            </ul>
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+          </div>
+        </div>
+        <p>Break</p>
+      </div>
+    </div>
+  </body>
+</html>
