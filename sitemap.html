@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cheese Sitemap</title>
     <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="icon" href="images/favicon.png">
   </head>
   <style>
     body {
-      background-color: white;
+      background-color: #444;
       margin: 0;
       padding: 0;
+      color: white;
     }
     h1 {
       text-align: center;
@@ -40,18 +42,30 @@
       background-color: gold;
       border: none;
     }
-    .sitelist{
-        color:#f0c506;
+    .sitelist {
+      color: #f0c506;
+    }
+    img {
+      animation: rotate 5s linear infinite;
+      height: 300px;
+      width: 400px;
+      float: right;
+    }
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
     }
   </style>
   <body>
     <div id="navbar">
       <ul class="topnav">
-        <li><a href="#home">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="cheeses.html">Cheeses</a></li>
         <li><a href="facts.html">Facts</a></li>
-        <li><a href="recepies.html">Recepies</a></li>
-        <li><a href="homemade.html">Do it from home!</a></li>
         <li><a id="active" href="sitemap.html">Sitemap</a></li>
         <li id="right"><a href="contact.html">Contact</a></li>
       </ul>
@@ -73,27 +87,16 @@
         </ul>
       </div>
       <div>
-        <h2>Recepies with different types of cheeses</h2>
-        <ul class="sitemaplist">
-          <li><a href="recepies.html" class="sitelist">Recepies</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>How to make cheese at home</h2>
-        <ul class="sitemaplist">
-          <li><a href="homemade.html" class="sitelist">Do it from home!</a></li>
-        </ul>
-      </div>
-      <div>
         <h2>Contact me!</h2>
         <ul class="sitemaplist">
-          <li id="right"><a href="contact.html" class="sitelist">Contact</a></li>
+          <li id="right">
+            <a href="contact.html" class="sitelist">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
     <div>
-      Sources:
-
+      <img src="https://www.drawingforall.net/wp-content/uploads/2015/03/How-to-draw-a-cheese-1.jpg" alt="" />
     </div>
   </body>
 </html>

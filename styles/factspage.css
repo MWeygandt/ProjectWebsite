@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+    color: white;
+    background-color: #444;
+  }
+  #fact {
+    font-size: 50pt;
+  }
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }

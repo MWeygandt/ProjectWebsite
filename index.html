@@ -7,19 +7,38 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="icon" href="favicon_io.zip" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.png" />
     <style>
       body {
         background-image: url(images/homebackground.jpg);
         width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: slideshow 20s infinite;
+        background-color: white;
+        color: black;
       }
-      #hometitle{
+      @keyframes slideshow {
+        0% {
+          background-image: url(images/homebackground.jpg);
+        }
+        33% {
+          background-image: url(images/homebackground2.jpg);
+        }
+        66% {
+          background-image: url(images/homebackground3.jpg);
+        }
+        100% {
+          background-image: url(images/homebackground4.jpg);
+        }
+      }
+      #hometitle {
         color: rgb(0, 0, 0);
         font-family: Arial, Helvetica, sans-serif;
-        font-size:5em;
+        font-size: 5em;
         text-align: center;
         margin-top: 300px;
       }
-
     </style>
   </head>
   <body>
@@ -28,8 +47,6 @@
         <li><a class="active" href="#home">Home</a></li>
         <li><a href="cheeses.html">Cheeses</a></li>
         <li><a href="facts.html">Facts</a></li>
-        <li><a href="recepies.html">Recepies</a></li>
-        <li><a href="homemade.html">Do it from home!</a></li>
         <li><a href="sitemap.html">Sitemap</a></li>
         <li id="right"><a href="contact.html">Contact</a></li>
       </ul>
@@ -38,6 +55,8 @@
       <h1 id="hometitle">Cheese</h1>
       <!-- <button id="homebtn">Take me to the Cheese!</button> -->
     </div>
+    <script>
+    </script>
   </body>
 </html>
 <!-- sources:
@@ -46,4 +65,5 @@ https://gridbyexample.com/patterns/header-twocol-footer-responsive/
 https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template
 https://www.w3schools.com/cssref/pr_grid-template.php
 https://www.w3schools.com/html/html_images_background.asp
-webstaurantstore.com/guide/869/types-of-cheese.html#freshcheeses -->
+webstaurantstore.com/guide/869/types-of-cheese.html#freshcheeses 
+ChatGPT "how to make a slideshow using css"-->

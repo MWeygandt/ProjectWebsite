@@ -6,105 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cheeses</title>
     <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/cheesespage.css" />
+    <link rel="icon" href="images/favicon.png">
   </head>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
-    .sidebar {
-      grid-area: sidebar;
-    }
-
-    .content {
-      grid-area: content;
-    }
-
-    .header {
-      grid-area: header;
-      column-span: 3;
-    }
-
-    .wrapper {
-      display: grid inline-grid;
-      grid-gap: 10px;
-      grid-template-columns: 50% 50%;
-      grid-template-rows: auto;
-      grid-template-areas:
-        "header header"
-        "sidebar content"
-        ". content"
-        ". content"
-        ". content"
-        ". content"
-        ". content"
-        ". content"
-        ". content"
-        ". content"
-        ". content"
-        ". content"
-        ". content"
-        ". content"
-        ". content"
-        ". content"
-        ". content"
-        ". content"
-        ". content"
-        ". content";
-
-      background-color: #fff;
-      color: #444;
-      justify-items: center;
-    }
-    .box {
-      background-color: #444;
-      color: #fff;
-      border-radius: 5px;
-      padding: 20px;
-      font-size: 150%;
-    }
-
-    .header {
-      background-color: #999;
-      justify-content: center;
-    }
-    img {
-      width: 350px;
-      height: 200px;
-    }
-    #item1 {
-      grid-column: 1 / 1;
-      grid-row: 1 / 10;
-    }
-    #item2 {
-      grid-column: 2 / 2;
-      grid-row: 2 / 2;
-    }
-    a:link {
-      text-decoration: none;
-    }
-    a:visited {
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: none;
-    }
-    a:active {
-      text-decoration: none;
-    }
-    a{
-        color: white;
-    }
-  </style>
   <body>
     <div id="navbar">
       <ul class="topnav">
-        <li><a href="#home">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a class="active" href="cheeses.html">Cheeses</a></li>
         <li><a href="facts.html">Facts</a></li>
-        <li><a href="recepies.html">Recepies</a></li>
-        <li><a href="homemade.html">Do it from home!</a></li>
         <li><a href="sitemap.html">Sitemap</a></li>
         <li id="right"><a href="contact.html">Contact</a></li>
       </ul>
@@ -193,7 +103,7 @@
                 Accompaniments: Olive oil, tomatoes, basil, grilled vegetables
               </li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" loading="lazy" />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -206,7 +116,10 @@
               <li>Wine: Rose</li>
               <li>Accompaniments: Cucumber, tomato, red onions</li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Feta_Cheese.jpg/1200px-Feta_Cheese.jpg"
+              alt="feta-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -222,7 +135,10 @@
                 bananas, jams, eggs, pesto, tomatoes
               </li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://www.culinaryhill.com/wp-content/uploads/2021/06/How-to-Make-Ricotta-Cheese-Culinary-Hill-1200x800-1.jpg"
+              alt="ricotta-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -238,7 +154,10 @@
                 chocolate
               </li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2022_33/1823089/cream-cheese-kb-main-211221.jpg"
+              alt="cream-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -252,7 +171,10 @@
                 Accompaniments: Berries, peaches, bananas, pineapple, granola
               </li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://www.godairyfree.org/wp-content/uploads/2021/09/Cottage-Cheese-online-feature.jpg"
+              alt="cottage-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -269,7 +191,10 @@
                 spooned on top of desserts
               </li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://www.daringgourmet.com/wp-content/uploads/2020/02/Mascarpone-4-square-scaled.jpg"
+              alt="mascarpone-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -282,7 +207,10 @@
               <li>Wine: California Merlot or Chardonnay</li>
               <li>Accompaniments: Green apples, pears, fig jam, honey</li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://cdn.shopify.com/s/files/1/2836/2982/products/brie-recipe_grande.jpg"
+              alt="brie-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -297,7 +225,10 @@
               <li>Wine: Cotes du Rhones</li>
               <li>Accompaniments: Cantaloupe, pecans, baguette</li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://www.cheese.com/media/img/cheese/Camembert.jpg"
+              alt="camembert-cheese" loading="lazy"
+            /> 
           </div>
         </div>
         <div id="item2" class="box content">
@@ -313,7 +244,10 @@
               <li>Wine: Chablis, Sancerre, or Champagne</li>
               <li>Accompaniments: Baguette, fig jam</li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://tasteoffrancemag.com/wp-content/uploads/2019/10/Chaource_fromage_07-Copy-e1570448712246.jpg"
+              alt="chaource-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -329,7 +263,10 @@
                 wheat bread, baguette, beets, almonds, apples
               </li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://www.cheese.com/media/img/cheese/1815-buche_de_chevre.jpg"
+              alt="chevre-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -342,7 +279,10 @@
               <li>Wine: Chardonnay, Sauvignon Blanc, Pinot Noir</li>
               <li>Accompaniments: Figs, raisins, walnuts, rustic breads</li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://dfwblobstorage.blob.core.windows.net/ewcmediacontainer/eatwisconsincheese/media/content/cheesemasters-2019/havarti-header_1.jpg"
+              alt="havarti-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -358,7 +298,10 @@
               </li>
               <li>Accompaniments: Apples, dried fruits, pears, beef</li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://cdn11.bigcommerce.com/s-2jk2gbnnuz/images/stencil/1280x1280/products/157/387/muenster_IMG_2058__46290.1546969091.jpg?c=2"
+              alt="muenster-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -374,7 +317,10 @@
                 olives, roasted red peppers, giardinera
               </li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://goldenagecheese.com/wp-content/uploads/2014/03/prov.jpg"
+              alt="provolone-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -393,7 +339,10 @@
                 Havarti, and Provolone cheese
               </li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://cf-images.us-east-1.prod.boltdns.net/v1/static/1033249144001/5f32e0f2-7537-46c4-91be-b6355d3c94aa/59cb3f88-07dc-4e8a-a912-365d5247e75e/1280x720/match/image.jpg"
+              alt="american-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -406,7 +355,10 @@
               <li>Wine: Saison, Pinot Noir, Rose</li>
               <li>Accompaniments: Mustard, honey, chestnuts, polenta</li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://cdn.shopify.com/s/files/1/1154/8424/products/taleggio.jpeg?v=1463699928"
+              alt="taleggio-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -420,7 +372,10 @@
                 Wine/Beer: Light red wine or brown beer, such as a pilsner
               </li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://culturecheesemag.com/wp-content/uploads/2017/11/Cascaval.jpg"
+              alt="cascaval-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -441,7 +396,10 @@
                 crackers
               </li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://cdn.shopify.com/s/files/1/0150/0232/products/sharp-colored-cheddar-cheese_800x.jpg"
+              alt="cheddar-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -457,7 +415,10 @@
               <li>Wine: Pinot Grigio, Riesling, Chardonnay, Shiraz</li>
               <li>Accompaniments: Peaches, apricots, cherries, melons</li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://www.cheese.com/media/img/cheese/edam_istock.jpg"
+              alt="edam-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -476,7 +437,10 @@
               </li>
               <li>Accompaniments: Apples, grapes, peaches, and pears</li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://chefsmandala.com/wp-content/uploads/2018/03/FR-v-SW-Emmental-FF-shutterstock_184750109-1.jpg"
+              alt="emmental-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -492,7 +456,10 @@
               <li>Wine: Cabernet or Shiraz</li>
               <li>Accompaniments: Spicy nuts, olives, oat crackers</li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://dfwblobstorage.blob.core.windows.net/ewcmediacontainer/eatwisconsincheese/media/content/cheesemasters-2019/gouda-header_2.jpg"
+              alt="gouda-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -512,7 +479,10 @@
                 marjoram
               </li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://bakeitwithlove.com/wp-content/uploads/2022/03/Gruyere-Cheese-Substitute-sq.jpg"
+              alt="gruyere-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -530,7 +500,10 @@
                 such as sourdough, baguette, or ciabatta
               </li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://cdn.shopify.com/s/files/1/0082/7722/9604/products/096S_agriform_asiago_d_allevo_dop_oro_del_tempo_stagionato-8.jpg"
+              alt="asiago-d-allevo-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -548,7 +521,10 @@
                 lacinato kale salads, add the rind into soup
               </li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/5eb43938f468c330e7d8d665/1600729905609-GE9OQLXSAK6GRTQCF46I/Photo+credit+Consorzio+Tutela+Grana+Padano"
+              alt="grana-padano-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -564,7 +540,10 @@
               <li>Wine/Beer: Stout, Porter, Sherry, Riesling, Whiskey</li>
               <li>Accompaniments: Honey, almonds, marmalade</li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://m.media-amazon.com/images/I/81ki+lE2tLL.jpg"
+              alt="manchego-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -583,7 +562,10 @@
                 spiced nuts
               </li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/59c57bbe197aea917f5c4a2b/1596756860101-74OD4TZSUS6ZSP3YEHK3/20-PG-Parmesan-pizza_cheese-Best_buy_online_organic_cheddar_blocks_bulk_pasture_access0240.jpg"
+              alt="parmesan-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -599,7 +581,10 @@
                 vegetables, sausages
               </li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://m.media-amazon.com/images/I/71vK4tFLmfL.jpg"
+              alt="pecorino-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -615,7 +600,10 @@
                 hazelnuts, figs, raspberries, cherries
               </li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://cdn.shopify.com/s/files/1/0676/7551/products/10229_Fourme_d_Ambert-2_1000x1000.jpg"
+              alt="fourme-d-ambert-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -628,7 +616,10 @@
               <li>Wine: Zinfandel and Sauternes</li>
               <li>Accompaniments: Grapes, honey, pistachios</li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://dfwblobstorage.blob.core.windows.net/ewcmediacontainer/eatwisconsincheese/media/content/cheesemasters-2019/gorgonzola-header_1.jpg"
+              alt="gorgonzola-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -641,7 +632,10 @@
               <li>Wine: Riesling, Port, Sherry, or ice wines</li>
               <li>Accompaniments: Honey, spiced apples, meat</li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://chefsmandala.com/wp-content/uploads/2018/02/Roquefort-Chz-shutterstock_567074089.jpg"
+              alt="roquefort-cheese" loading="lazy"
+            />
           </div>
         </div>
         <div id="item2" class="box content">
@@ -661,7 +655,10 @@
                 fish, nut bread
               </li>
             </ul>
-            <img src="images/mozzarella.jpg" alt="mozzarella-cheese" />
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/58d5711a9f7456928cbaf420/1529698413013-CRCN2X765WYZH5WO5OMZ/Image+%5BSquare%5D.JPG"
+              alt="stilton-cheese" loading="lazy"
+            />
           </div>
         </div>
         <p>Break</p>
@@ -669,3 +666,4 @@
     </div>
   </body>
 </html>
+<!-- ChatGPT how to lazy load images -->

@@ -1,25 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/navbar.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="styles/factspage.css" />
+    <link rel="icon" href="images/favicon.png">
+  </head>
+  <body>
     <div id="navbar">
-        <ul class="topnav">
-          <li><a href="#home">Home</a></li>
-          <li><a href="cheeses.html">Cheeses</a></li>
-          <li><a id="active" href="facts.html">Facts</a></li>
-          <li><a href="recepies.html">Recepies</a></li>
-          <li><a href="homemade.html">Do it from home!</a></li>
-          <li><a href="sitemap.html">Sitemap</a></li>
-          <li id="right"><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <p>https://www.idfa.org/cheese-facts</p>
-      <p>https://recipes.howstuffworks.com/dairy/different-types-of-cheese.htm</p>
-</body>
+      <ul class="topnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cheeses.html">Cheeses</a></li>
+        <li><a id="active" href="facts.html">Facts</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li id="right"><a href="contact.html">Contact</a></li>
+        <li id="right"><button onclick="toggleMode()">Toggle Mode</button></li>
+      </ul>
+    </div>
+    <div>
+    </div>
+    <div>
+      <h1>Click the cheese to show a random cheese facts!</h1>
+    </div>
+    <div>
+      <img src="https://easydrawingart.com/wp-content/uploads/2019/07/How-to-draw-a-cheese.jpg" alt="" onclick="displayRandomFact()"/>
+    </div>
+    <script>
+      function displayRandomFact() {
+        const facts = [
+          "The most popular cheese recipe in the US is macaroni and cheese",
+          "Cheese takes up about 1/10th the volume of milk to was made from",
+          "A normal Cheddar cheese wheel weighs 60-75 pounds",
+          "The origin of cheese dates as far back as 6000 BCE",
+          "There are over 2000 different types of cheese worldwide",
+          "The average person from Greece eats around 60 pounds of cheese per year",
+          "Cheese can be produced using a variety of milk including cow, buffalo, goat, horse, and camel",
+          "20 million metric tons of cheese is produced each year",
+          "About 10 pounds of milk is required to make 1 pound of cheese",
+          "Large Ancient Roman houses had separate kitchens for cheese making",
+          "The US produces the most cheese in the world per year",
+          "Gouda is the most consumed type of cheese",
+          "Edam cheese never goes bad",
+          "The heaviest cheese produced weighed 57,518 pounds",
+          "Pule is the worlds most expensive cheese, 1 pound can be anywhere from 600 to 1000 dollars",
+          "Pizza Hut uses around 300 million pounds of cheese annually",
+        ];
+        const randomIndex = Math.floor(Math.random() * facts.length);
+        const randomFact = facts[randomIndex];
+        document.querySelector("h1").innerText = randomFact;
+      }
+      function toggleMode() {
+        let body = document.getElementsByTagName("body")[0];
+        let currentClass = body.className;
+        body.className = currentClass === "dark-mode" ? "" : "dark-mode";
+      } //ChatGPT easy darkmode function
+    </script>
+    </script>
+  </body>
 </html>
+<!--  <p>https://www.idfa.org/cheese-facts</p>
+      <p>https://recipes.howstuffworks.com/dairy/different-types-of-cheese.htm</p>
+      https://cheesehouse.com/uncategorized/mind-blowing-cheese-facts/ 
+      https://www.swedishnomad.com/facts-about-cheese/-->
+<!-- <div>
+      <p>The most popular cheese recipe in the US is macaroni and cheese</p>
+      <p>Cheese takes up about 1/10th the volume of milk to was made from</p>
+      <p>A normal Cheddar cheese wheel weighs 60-75 pounds</p>
+      <p>The origin of cheese dates as far back as 6000 BCE</p>
+      <p>There are over 2000 different types of cheese worldwide</p>
+      <p>
+        The average person from Greece eats around 60 pounds of cheese per year
+      </p>
+      <p>
+        Cheese can be produced using a variety of milk including cow, buffalo,
+        goat, horse, and camel
+      </p>
+      <p>20 million metric tons of cheese is produced each year</p>
+      <p>About 10 pounds of milk is required to make 1 pound of cheese</p>
+      <p>Large Ancient Roman houses had separate kitchens for cheese making</p>
+      <p>The US produces the most cheese in the world per year</p>
+      <p>Gouda is the most consumped type of cheese</p>
+      <p>Edam cheese never goes bad</p>
+      <p>The heaviest cheese produced weighed 57,518 pounds</p>
+      <p>Pule is the worlds most expensive cheese, 1 pound can be anywhere from 600 to 1000 dollars</p>
+      <p>Pizza Hut uses around 300 million pounds of cheese annually</p>
+    </div> -->
